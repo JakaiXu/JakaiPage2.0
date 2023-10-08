@@ -1,7 +1,6 @@
-import React from 'react'
+import AboutMe from "@/components/about";
+import React from "react";
 
-export default function AboutMe() {
-  return (
-    <div>AboutMe</div>
-  )
+export default function AboutMePage() {
+  return <AboutMe />;
 }
