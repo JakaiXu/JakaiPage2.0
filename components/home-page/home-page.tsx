@@ -23,7 +23,10 @@ const HomePageComponent = () => {
           bgcolor: Color.state.default,
         }}
       >
-        <Box sx={{ padding: 6, width: "60%" }}>
+
+      </ConfigContainer>
+      <ConfigContainer sx={{ bgcolor: Color.action.default }}></ConfigContainer>
+      <Box sx={{ padding: 6, width: "100%", bgcolor: "red",position:'absolute', left:{} }}>
           <DefaultTitle>Full Stack Web Developer</DefaultTitle>
           <Typography
             sx={{ fontSize: 80, fontWeight: 900, color: Color.surface.dark }}
@@ -59,8 +62,6 @@ const HomePageComponent = () => {
             </StyledGrid>
           </Grid>
         </Box>
-      </ConfigContainer>
-      <ConfigContainer sx={{ bgcolor: Color.action.default }}></ConfigContainer>
     </Box>
   );
 };
