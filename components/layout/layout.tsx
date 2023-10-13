@@ -12,7 +12,7 @@ export default function RootLayout({
   return (
     <Box>
       <Header />
-      <main className={inter.className}>{children}</main>
+      <Box className={inter.className}>{children}</Box>
     </Box>
   );
 }
