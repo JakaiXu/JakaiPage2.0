@@ -1,7 +1,8 @@
 import React from "react";
-import HomePageComponent from "@/components/home-page/home-page";
+
+import HomePageBackground from "@/components/home-page/home-page-background";
 const HomePage = () => {
-  return <HomePageComponent />;
+  return <HomePageBackground />;
 };
 
 export default HomePage;
