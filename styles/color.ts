@@ -9,12 +9,12 @@ export const Color = {
   },
   action: {
     default: "#D5C455",
-    dark:"#B5A34B"
+    dark: "#B5A34B",
   },
   state: {
     default: "#F8F8F8",
+    white: "#FFFFFF",
   },
 };
 
-
-export type SxPropsStyles = Record<string, SxProps<Theme>>
+export type SxPropsStyles = Record<string, SxProps<Theme>>;

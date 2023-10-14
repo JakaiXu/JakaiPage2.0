@@ -1,3 +1,5 @@
+import Menu, { MenuProps } from "@mui/material/Menu";
+
 export const headerStyles = {
   container: {
     position: "fixed",
@@ -7,7 +9,7 @@ export const headerStyles = {
     zIndex: 2,
     width: "100%",
   },
-  innerBox:{
+  innerBox: {
     maxWidth: "xl",
     margin: "0 auto",
     display: "flex",
@@ -17,9 +19,10 @@ export const headerStyles = {
     bgcolor: "transparent",
     zIndex: 1,
   },
-  text:{
+  text: {
     fontFamily: '"Poppins", Arial, sans-serif',
     fontWeight: 900,
     fontSize: 28,
-  }
+  },
 };
+
