@@ -10,15 +10,14 @@ const HomePageBackground: FC = () => {
     <Box sx={homePageStyles.container}>
       <ConfigContainer sx={{ bgcolor: Color.state.default }} />
       <ConfigContainer
-        sx={(theme) => ({
-          bgcolor: {
-            [theme.breakpoints.down("md")]: Color.state.default,
-            [theme.breakpoints.up("md")]: Color.action.default,
+        sx={{
+          backgroundColor: {
+            md: Color.action.default,
+            sm: Color.state.default,
+            xs: Color.state.default,
           },
-          position: {
-            lg: "relative",
-          },
-        })}
+          position: { lg: "relative" },
+        }}
       >
         <Box sx={homePageStyles.imageBox}>
           <Carrousel />

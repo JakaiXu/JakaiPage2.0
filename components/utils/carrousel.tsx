@@ -11,16 +11,6 @@ const images = [profile2, profile3];
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const Carrousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
-  useEffect(() => {
-    const handleNext = () => {
-      setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
-    };
-    //change back later to 3000
-    const interval = setInterval(handleNext, 9000);
-    return () => {
-      clearInterval(interval);
-    };
-  }, [activeIndex]);
   return (
     <AutoPlaySwipeableViews
       index={activeIndex}
