@@ -1,6 +1,10 @@
+import AboutMeSection from "@/components/about/about-me-section";
 import PageBackgroundPaper from "@/components/utils/page-background-paper";
-import React from "react";
 
 export default function AboutMePage() {
-  return <PageBackgroundPaper></PageBackgroundPaper>;
+  return (
+    <PageBackgroundPaper>
+      <AboutMeSection />
+    </PageBackgroundPaper>
+  );
 }
