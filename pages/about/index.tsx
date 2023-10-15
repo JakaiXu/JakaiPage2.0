@@ -1,7 +1,6 @@
-import AboutMe from "@/components/about";
-import RootLayout from "@/components/layout/layout";
+import PageBackgroundPaper from "@/components/utils/page-background-paper";
 import React from "react";
 
 export default function AboutMePage() {
-  return <AboutMe />;
+  return <PageBackgroundPaper></PageBackgroundPaper>;
 }
