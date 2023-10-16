@@ -6,6 +6,7 @@ export const Color = {
     default: "#343a40",
     muted: "#E9EAED",
     dark: "#212529",
+    light: "#959595",
   },
   action: {
     default: "#D5C455",
@@ -13,7 +14,9 @@ export const Color = {
   },
   state: {
     default: "#F8F8F8",
+    gray: "#323232",
     white: "#FFFFFF",
+    black: "#000000",
   },
 };
 

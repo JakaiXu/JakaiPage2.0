@@ -20,7 +20,7 @@ const HomePageBackground: FC = () => {
         }}
       >
         <Box sx={homePageStyles.imageBox}>
-          <Carrousel />
+          {/* <Carrousel /> */}
         </Box>
       </ConfigContainer>
       <HeroSection />

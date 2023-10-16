@@ -6,7 +6,7 @@ export const dropdownMenu: SxPropsStyles = {
     right: 70,
     top: 80,
     backgroundColor: Color.state.white,
-    height: 300,
+    height: 350,
     width: 180,
     display: "flex",
     flexDirection: "column",
