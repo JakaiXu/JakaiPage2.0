@@ -1,5 +1,3 @@
-import Menu, { MenuProps } from "@mui/material/Menu";
-
 export const headerStyles = {
   container: {
     position: "fixed",

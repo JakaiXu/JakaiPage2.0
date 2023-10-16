@@ -1,7 +1,8 @@
 import Header from "@/components/header/header";
 import { Box } from "@mui/material";
 import { Inter } from "next/font/google";
-import Head from "next/head";
+import NavBanner from "../utils/navi-banner";
+import { useRouter } from "next/router";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -10,10 +11,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const router = useRouter();
+  const isHomePage = router.pathname === "/home";
+
   return (
-    <Box>
+    <>
       <Header />
+      {isHomePage ? <></> : <NavBanner />}
       <Box className={inter.className}>{children}</Box>
-    </Box>
+    </>
   );
 }

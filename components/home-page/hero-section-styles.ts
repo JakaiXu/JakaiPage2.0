@@ -65,16 +65,16 @@ export const StyledGrid = styled(Grid)(({ theme }) => ({
   },
 }));
 export const DefaultTitle = styled(Typography)(() => ({
-    color: Color.action.default,
-    textTransform: "uppercase",
-    fontWeight: "bold ",
-  }));
-  export const DefaultTextDarkBold = styled(Typography)(() => ({
-    fontSize: 14,
-    fontWeight: "bold",
-  }));
-  export const DefaultTextLightBold = styled(Typography)(() => ({
-    color: "white",
-    fontSize: 14,
-    fontWeight: "bold",
-  }));
+  color: Color.action.default,
+  textTransform: "uppercase",
+  fontWeight: "bold ",
+}));
+export const DefaultTextDarkBold = styled(Typography)(() => ({
+  fontSize: 14,
+  fontWeight: "bold",
+}));
+export const DefaultTextLightBold = styled(Typography)(() => ({
+  color: "white",
+  fontSize: 14,
+  fontWeight: "bold",
+}));
