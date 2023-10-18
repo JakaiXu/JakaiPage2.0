@@ -1,23 +1,17 @@
 import { Color } from "@/styles/color";
-import { Box, Card, Grid, Stack, Typography } from "@mui/material";
+import { Box, Grid, Stack, Typography } from "@mui/material";
 import React from "react";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 import { HeaderTitle } from "@/styles/customTheme";
-import { Title } from "@/styles/customTheme";
+import { StaticImageData } from "next/image";
 interface CardGuestProps {
   name: string;
   title: string;
   description: string;
-  img: string;
+  img:string;
 }
 function CardGuest({ name, title, description, img }: CardGuestProps) {
   return (
-    <Grid
-            container
-            spacing={4}
-            gap={4}
-            sx={{ width: "100%", margin: "0 auto",display:'flex',flexDirection:'column' }}
-          >
     <Grid
       item
       xl={3.7}
@@ -25,14 +19,15 @@ function CardGuest({ name, title, description, img }: CardGuestProps) {
       md={5}
       sm={11}
       xs={11}
-      sx={{ height: 400, bgcolor: Color.state.white, borderRadius: 2 }}
+      sx={{ height: 300, bgcolor: Color.state.white, borderRadius: 2 }}
     >
       <Stack flexDirection="row" sx={{ alignItems: "center" }}>
         <Box sx={{ position: "relative" }}>
           <Box
             component="img"
             src={img}
-            sx={{ borderRadius: "50%", width: 80, height: 80 }}
+            
+            sx={{ borderRadius: "50%", width: 80, height: 80,objectFit:'cover' }}
           />
           <Box>
             <FormatQuoteIcon
@@ -51,7 +46,14 @@ function CardGuest({ name, title, description, img }: CardGuestProps) {
             />
           </Box>
         </Box>
-        <Box sx={{ marginLeft: 3,display:'flex',flexDirection:"column", justifyContent: "center" }}>
+        <Box
+          sx={{
+            marginLeft: 3,
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+          }}
+        >
           <Typography
             sx={{
               fontSize: {
@@ -77,7 +79,6 @@ function CardGuest({ name, title, description, img }: CardGuestProps) {
       >
         {description}
       </Typography>
-    </Grid>
     </Grid>
   );
 }
