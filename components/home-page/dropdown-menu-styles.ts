@@ -1,7 +1,7 @@
 import { Color, SxPropsStyles } from "@/styles/color";
 
-export const dropdownMenu: SxPropsStyles = {
-  list: {
+export const MenuBoxStyles: SxPropsStyles = {
+  dropdown: {
     position: "absolute",
     right: 70,
     top: 80,
@@ -12,9 +12,17 @@ export const dropdownMenu: SxPropsStyles = {
     flexDirection: "column",
     justifyContent: "space-evenly",
     paddingLeft: 2,
-    fontFamliy: "Roboto, sans-serif",
     fontWeight: 400,
-    fontFamily: '"Poppins", Arial, sans-serif',
+    fontFamily: "sans-serif",
     boxShadow: `1px 1px 5px ${Color.surface.muted}`,
+  },
+  mobileList: {
+    fontFamily: "sans-serif",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    lineHeight:2,
+    fontWeight:400,
+    width:'100%'
   },
 };

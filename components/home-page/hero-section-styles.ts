@@ -6,9 +6,13 @@ export const heroSectionStyles: SxPropsStyles = {
     maxWidth: 1920,
     width: "100%",
     position: "absolute",
-    top: { sm: "50%", xs: 0 },
+    top: { xl: "50%", md: "50%", sm: "50%", xs:0 },
     left: "50%",
-    transform: { sm: "translate(-50%, -50%)", xs: "translate(-50%,60%)" },
+    transform: {
+      xl: "translate(-50%, -50%)",
+      sm: "translate(-50%, -50%)",
+      xs: "translate(-50%,60%)",
+    },
   },
   titleSize: {
     fontSize: { md: 80, sm: 40, xs: 36 },

@@ -40,7 +40,7 @@ const HeroSection = () => {
             >
               <DefaultTextDarkBold>hire me</DefaultTextDarkBold>
               <ArrowRightAltIcon sx={heroSectionStyles.arrowIcon} />
-            </StyledGrid>{" "}
+            </StyledGrid>
           </CustomLink>
         </Grid>
       </StyledBox>

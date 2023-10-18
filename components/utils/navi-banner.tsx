@@ -28,7 +28,7 @@ const NavBanner = () => {
     labelName = "/show cases";
   }
   if (labelName === "/download") {
-    labelName = "/download Jakai Resume";
+    labelName = "/download CV";
   } else labelName;
   const formateLabelName = _.chain(labelName)
     .trimStart("/")
@@ -43,10 +43,10 @@ const NavBanner = () => {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        paddingTop: 30,
-        paddingBottom: 15,
+        paddingTop: { md: 30, xs: 20 },
+        paddingBottom: { md: 15, xs: 8 },
         bgcolor: Color.state.default,
-        margin:0
+        margin: 0,
       }}
     >
       <Stack flexDirection="row" alignItems="center">

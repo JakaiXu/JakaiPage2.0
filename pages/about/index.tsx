@@ -1,6 +1,8 @@
 import AboutMeSection from "@/components/about/about-me-section";
+import HappyGuest from "@/components/about/happy-guest-section";
 import SkillSection from "@/components/about/skills-section";
 import PageBackgroundPaper from "@/components/utils/page-background-paper";
+
 import { useEffect, useState } from "react";
 
 export default function AboutMePage() {
@@ -21,6 +23,7 @@ export default function AboutMePage() {
     <PageBackgroundPaper>
       <AboutMeSection />
       <SkillSection />
+      <HappyGuest />
       {/* <AboutMeSection floating={isAboutMeVisible} />
       <SkillSection floating={isSkillSectionVisible} /> */}
     </PageBackgroundPaper>
