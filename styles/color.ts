@@ -14,6 +14,7 @@ export const Color = {
   },
   state: {
     default: "#F8F8F8",
+    light_gray: "#999999",
     gray: "#323232",
     white: "#FFFFFF",
     black: "#000000",

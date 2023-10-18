@@ -1,3 +1,5 @@
+import { Color } from "@/styles/color";
+
 export const headerStyles = {
   container: {
     position: "fixed",
@@ -5,22 +7,22 @@ export const headerStyles = {
     left: 0,
     right: 0,
     zIndex: 2,
-    width: "100%",
   },
   innerBox: {
-    maxWidth: "xl",
-    margin: "0 auto",
+    position: "relative",
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    padding: "30px 60px",
+    padding: { md: "30px 60px", sm: "30px", xs: "30px 20px" },
     bgcolor: "transparent",
     zIndex: 1,
+    maxWidth: "xl",
+    margin: "0 auto",
   },
   text: {
-    fontFamily: '"Poppins", Arial, sans-serif',
+    fontFamily: "sans-serif",
     fontWeight: 900,
     fontSize: 28,
+    color: Color.action.default,
   },
 };
-

@@ -3,6 +3,7 @@ import { Box } from "@mui/material";
 import { Inter } from "next/font/google";
 import NavBanner from "../utils/navi-banner";
 import { useRouter } from "next/router";
+import Footer from "../footer/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +20,7 @@ export default function RootLayout({
       <Header />
       {isHomePage ? <></> : <NavBanner />}
       <Box className={inter.className}>{children}</Box>
+      <Footer />
     </>
   );
 }
