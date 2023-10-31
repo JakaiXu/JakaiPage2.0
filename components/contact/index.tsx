@@ -15,7 +15,7 @@ const Contact = () => {
           flexDirection: { md: "row", sm: "column", xs: "column" },
           paddingX: { xl: 40, lg: 20, md: 5, sm: 1, xs: 1 },
           bgcolor: Color.state.default,
-          height: 825,
+          height: 800,
           minHeight: "max-content",
         }}
       >
