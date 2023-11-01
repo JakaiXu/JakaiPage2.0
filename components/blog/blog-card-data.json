@@ -1,0 +1,68 @@
+{
+  "blogs": [
+    {
+      "date": "03-01-2023",
+      "commentsQuantity": 2,
+      "title": "The Newest Async Manager method with RTKQ",
+      "content": "A query operation can be performed with any data fetching library of your choice, but the general recommendation is that you only use queries for requests that retrieve data.",
+      "img": "https://jakai-photos.s3.ap-southeast-2.amazonaws.com/blog-p3.jpg",
+      "id": 1
+    },
+    {
+      "date": "08-11-2023",
+      "commentsQuantity": 5,
+      "title": "The Newest Async Manager method with RTKQ",
+      "content": "A query operation can be performed with any data fetching library of your choice, but the general recommendation is that you only use queries for requests that retrieve data.",
+      "img": "https://jakai-photos.s3.ap-southeast-2.amazonaws.com/blog-p2.jpg",
+      "id": 2
+    },
+    {
+      "date": "03-01-2023",
+      "commentsQuantity": 2,
+      "title": "The Newest Async Manager method with RTKQ",
+      "content": "A query operation can be performed with any data fetching library of your choice, but the general recommendation is that you only use queries for requests that retrieve data.",
+      "img": "https://jakai-photos.s3.ap-southeast-2.amazonaws.com/blog-p1.webp",
+      "id": 3
+    },
+    {
+      "date": "08-11-2023",
+      "commentsQuantity": 5,
+      "title": "The Newest Async Manager method with RTKQ",
+      "content": "A query operation can be performed with any data fetching library of your choice, but the general recommendation is that you only use queries for requests that retrieve data.",
+      "img": "https://jakai-photos.s3.ap-southeast-2.amazonaws.com/blog-p4.jpg",
+      "id": 4
+    },
+    {
+      "date": "03-01-2023",
+      "commentsQuantity": 2,
+      "title": "The Newest Async Manager method with RTKQ",
+      "content": "A query operation can be performed with any data fetching library of your choice, but the general recommendation is that you only use queries for requests that retrieve data.",
+      "img": "https://jakai-photos.s3.ap-southeast-2.amazonaws.com/blog-p3.jpg",
+      "id": 5
+    },
+    {
+      "date": "08-11-2023",
+      "commentsQuantity": 5,
+      "title": "The Newest Async Manager method with RTKQ",
+      "content": "A query operation can be performed with any data fetching library of your choice, but the general recommendation is that you only use queries for requests that retrieve data.",
+      "img": "https://jakai-photos.s3.ap-southeast-2.amazonaws.com/blog-p2.jpg",
+      "id": 6
+    },
+    {
+      "date": "03-01-2023",
+      "commentsQuantity": 2,
+      "title": "The Newest Async Manager method with RTKQ",
+      "content": "A query operation can be performed with any data fetching library of your choice, but the general recommendation is that you only use queries for requests that retrieve data.",
+      "img": "https://jakai-photos.s3.ap-southeast-2.amazonaws.com/blog-p1.webp",
+      "id": 7
+    },
+    {
+      "date": "08-11-2023",
+      "commentsQuantity": 5,
+      "title": "The Newest Async Manager method with RTKQ",
+      "content": "A query operation can be performed with any data fetching library of your choice, but the general recommendation is that you only use queries for requests that retrieve data.",
+      "img": "https://jakai-photos.s3.ap-southeast-2.amazonaws.com/blog-p4.jpg",
+      "id": 8
+    }
+  ]
+}
