@@ -28,7 +28,6 @@ const HappyGuest = () => {
             />
           ))}
         </Grid>
-        {/* </Carousel> */}
       </Container>
     </MotionContainer>
   );
