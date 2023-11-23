@@ -1,4 +1,4 @@
-import { Box, Container } from "@mui/material";
+import { Container } from "@mui/material";
 import React from "react";
 import LeftHalf from "./left-half";
 import RightHalf from "./right-half";

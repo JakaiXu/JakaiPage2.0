@@ -4,7 +4,6 @@ import TitleHeader from "../utils/title-header";
 import { Container, Grid } from "@mui/material";
 import CardGuest from "../utils/card-guest";
 import { nanoid } from "@reduxjs/toolkit";
-import { Carousel } from "react-responsive-carousel";
 import avatar1 from "../assets/avatar1.jpeg";
 import avatar2 from "../assets/avatar2.jpeg";
 import avatar3 from "../assets/avatar3.jpeg";
@@ -28,7 +27,6 @@ const HappyGuest = () => {
             />
           ))}
         </Grid>
-        {/* </Carousel> */}
       </Container>
     </MotionContainer>
   );

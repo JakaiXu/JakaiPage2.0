@@ -10,7 +10,6 @@ const menuList = [
   "about",
   "showcase",
   "experience",
-  "works",
   "blog",
   "contact",
   "download",
