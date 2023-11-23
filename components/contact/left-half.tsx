@@ -1,30 +1,44 @@
 import { Color } from "@/styles/color";
 import {
+  FacebookOutlined,
+  Instagram,
+  LinkedIn,
+  Twitter,
+} from "@mui/icons-material";
+import {
   Box,
   Button,
   ButtonGroup,
   Container,
   Divider,
   FormControl,
+  IconButton,
   Input,
   List,
   ListItem,
-  TextareaAutosize,
+  Theme,
   Typography,
   styled,
+  useMediaQuery,
 } from "@mui/material";
-import { red } from "@mui/material/colors";
 import Link from "next/link";
-import React from "react";
+import { useRouter } from "next/router";
+import React, { FormEvent } from "react";
 
 const LeftHalf = () => {
+  const isMobile = useMediaQuery((theme: Theme) =>
+    theme.breakpoints.down("sm")
+  );
+  const router = useRouter();
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault();
+    router.push("/contact/messagesent");
+  };
   return (
     <Container sx={styles.container}>
       <Box sx={styles.box}>
-        <Typography variant="h3" sx={{ fontWeight: 900 }}>
-          Contact me
-        </Typography>
-        <Typography variant="h5" sx={{ marginY: 1 }}>
+        <Typography sx={styles.contact}>Contact me</Typography>
+        <Typography variant="h5" sx={styles.subtitle}>
           I&apos;m open for any suggestion or just to have a chat.
         </Typography>
         <FormControl>
@@ -52,59 +66,112 @@ const LeftHalf = () => {
           placeholder="Create a message here
 "
         />
-        <Button variant="contained" sx={{ color: Color.state.white }}>
+        <Button
+          variant="contained"
+          sx={{ color: Color.state.white }}
+          onClick={handleSubmit}
+        >
           Send Message
         </Button>
         <Box>
-          <Typography variant="h6" sx={{ margin:'24px 0 12px 8px' }}>
+          <Typography variant="h6" sx={{ margin: "24px 0 12px 8px" }}>
             Follow me here
           </Typography>
-          <ButtonGroup>
-            <Button variant="outlined">
-              <Link
-                style={{
-                  color: `${Color.action.default}`,
-                  textDecoration: "none",
-                }}
-                href="https://www.linkedin.com/in/jakai-xu/"
-              >
-                FaceBook
-              </Link>
-            </Button>
-            <Button variant="outlined">
-              <Link
-                style={{
-                  color: `${Color.action.default}`,
-                  textDecoration: "none",
-                }}
-                href="https://www.linkedin.com/in/jakai-xu/"
-              >
-                Twitter
-              </Link>
-            </Button>
-            <Button variant="outlined">
-              <Link
-                style={{
-                  color: `${Color.action.default}`,
-                  textDecoration: "none",
-                }}
-                href="https://www.linkedin.com/in/jakai-xu/"
-              >
-                Instagram
-              </Link>
-            </Button>
-            <Button variant="outlined">
-              <Link
-                style={{
-                  color: `${Color.action.default}`,
-                  textDecoration: "none",
-                }}
-                href="https://www.linkedin.com/in/jakai-xu/"
-              >
-                LinkedIn
-              </Link>
-            </Button>
-          </ButtonGroup>
+          {isMobile ? (
+            <ButtonGroup>
+              <IconButton>
+                <FacebookOutlined sx={{ color: Color.action.default }} />
+                <Link
+                  style={{
+                    color: `${Color.action.default}`,
+                    textDecoration: "none",
+                  }}
+                  href="https://www.linkedin.com/in/jakai-xu/"
+                ></Link>
+              </IconButton>
+              <IconButton>
+                <Twitter sx={{ color: Color.action.default }} />
+                <Link
+                  style={{
+                    color: `${Color.action.default}`,
+                    textDecoration: "none",
+                  }}
+                  href="https://www.linkedin.com/in/jakai-xu/"
+                ></Link>
+              </IconButton>
+              <IconButton>
+                <Instagram sx={{ color: Color.action.default }} />
+                <Link
+                  style={{
+                    color: `${Color.action.default}`,
+                    textDecoration: "none",
+                  }}
+                  href="https://www.linkedin.com/in/jakai-xu/"
+                ></Link>
+              </IconButton>
+              <IconButton>
+                <LinkedIn sx={{ color: Color.action.default }} />
+                <Link
+                  style={{
+                    color: `${Color.action.default}`,
+                    textDecoration: "none",
+                  }}
+                  href="https://www.linkedin.com/in/jakai-xu/"
+                ></Link>
+              </IconButton>
+            </ButtonGroup>
+          ) : (
+            <ButtonGroup>
+              <Button variant="outlined">
+                <FacebookOutlined />
+                <Link
+                  style={{
+                    color: `${Color.action.default}`,
+                    textDecoration: "none",
+                  }}
+                  href="https://www.linkedin.com/in/jakai-xu/"
+                >
+                  FaceBook
+                </Link>
+              </Button>
+              <Button variant="outlined">
+                <Twitter />
+                <Link
+                  style={{
+                    color: `${Color.action.default}`,
+                    textDecoration: "none",
+                  }}
+                  href="https://www.linkedin.com/in/jakai-xu/"
+                >
+                  Twitter
+                </Link>
+              </Button>
+              <Button variant="outlined">
+                <Instagram />
+                <Link
+                  style={{
+                    color: `${Color.action.default}`,
+                    textDecoration: "none",
+                  }}
+                  href="https://www.linkedin.com/in/jakai-xu/"
+                >
+                  Instagram
+                </Link>
+              </Button>
+              <Button variant="outlined">
+                <LinkedIn />
+                <Link
+                  style={{
+                    color: `${Color.action.default}`,
+                    textDecoration: "none",
+                  }}
+                  href="https://www.linkedin.com/in/jakai-xu/"
+                >
+                  LinkedIn
+                </Link>
+              </Button>
+            </ButtonGroup>
+          )}
         </Box>
       </Box>
     </Container>
@@ -118,9 +185,21 @@ const styles = {
     height: 750,
   },
   box: {
-    paddingX: 4,
+    marginX: 1,
     paddingY: 8,
   },
+  contact: {
+    fontWeight: 900,
+    fontSize: {
+      lg: 44,
+      md: 40,
+      sm: 36,
+      xs: 32,
+    },
+    color: Color.action.default,
+    marginBottom: 2,
+  },
+  subtitle: { marginY: 1, color: Color.state.gray },
 };
 const StyledInput = styled(Input)(() => ({
   width: "100%",
@@ -146,10 +225,18 @@ const TextareaElement = styled("textarea", {
   },
 }));
 
-const BoldLabel = styled("span")(() => ({
+const BoldLabel = styled("span")(({ theme }) => ({
   fontWeight: "bold",
+  color: Color.state.gray,
   marginRight: 5,
+  [theme.breakpoints.down("sm")]: {
+    fontSize: 14,
+  },
 }));
-const ContentText = styled("span")(() => ({
+const ContentText = styled("span")(({ theme }) => ({
   color: Color.state.light_gray,
+  marginLeft: 2,
+  [theme.breakpoints.down("sm")]: {
+    fontSize: 14,
+  },
 }));
