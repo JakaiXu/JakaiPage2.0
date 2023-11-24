@@ -1,9 +1,9 @@
 import { Container } from "@mui/material";
 import React from "react";
 import LeftHalf from "./left-half";
-import RightHalf from "./right-half";
 import { Color } from "@/styles/color";
 import PageBackgroundPaper from "../utils/page-background-paper";
+import RightHalf from "./right-half";
 
 const Contact = () => {
   return (
@@ -20,7 +20,7 @@ const Contact = () => {
         }}
       >
         <LeftHalf />
-        <RightHalf />
+        {/* <RightHalf /> */}
       </Container>
     </PageBackgroundPaper>
   );

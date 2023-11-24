@@ -1,28 +1,6 @@
-import { Color } from "@/styles/color";
 import { Box, Container } from "@mui/material";
 import React from "react";
-import {
-  GoogleMap,
-  Marker,
-  WithGoogleMapProps,
-  WithScriptjsProps,
-  withGoogleMap,
-  withScriptjs,
-} from "react-google-maps";
-interface MyMapProps {
-  isMarkerShown: boolean;
-}
-const MyMapComponent = withScriptjs(
-  withGoogleMap(
-    (props: MyMapProps & WithGoogleMapProps & WithScriptjsProps) => (
-      <GoogleMap defaultZoom={10} defaultCenter={{ lat: -33.8, lng: 151.1 }}>
-        {props.isMarkerShown && (
-          <Marker position={{ lat: -33.9, lng: 151.2 }} />
-        )}
-      </GoogleMap>
-    )
-  )
-);
+import MyMapComponent from "./my-map-component";
 
 const RightHalf = () => {
   return (
