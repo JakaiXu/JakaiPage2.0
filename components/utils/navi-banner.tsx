@@ -29,6 +29,9 @@ const NavBanner = () => {
   }
   if (labelName === "/download") {
     labelName = "/download CV";
+  }
+  if (labelName === "/contact/messagesent") {
+    labelName = "";
   } else labelName;
   const formateLabelName = _.chain(labelName)
     .trimStart("/")

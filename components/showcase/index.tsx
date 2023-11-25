@@ -1,8 +1,9 @@
 import React from 'react'
+import CaseCard from './case-card'
 
 const ShowCase = () => {
   return (
-    <div>ShowCase</div>
+    <CaseCard />
   )
 }
 
