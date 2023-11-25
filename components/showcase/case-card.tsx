@@ -1,4 +1,4 @@
-import { Box, CardMedia, Container, Typography } from "@mui/material";
+import { Box, CardMedia, Container, Link, Typography } from "@mui/material";
 import React from "react";
 import PageBackgroundPaper from "../utils/page-background-paper";
 import { Color } from "@/styles/color";
@@ -10,6 +10,7 @@ const caseData = [
     content: `⦾ Successfully replicated the Breville website's navigation component using React, TypeScript, and Material-UI. 
     ⦾ Implementing interactive features such as hover effects for the navbar and dynamic scrolling behaviour.`,
     src: "https://jakai-videos.s3.ap-southeast-2.amazonaws.com/breville-imitative.MP4",
+    url: "http://jakai-breville.s3-website-ap-southeast-2.amazonaws.com/",
   },
   {
     id: 2,
@@ -21,6 +22,7 @@ const caseData = [
     ⦾ rigorously validating transactions to prevent errors.
   `,
     src: "https://jakai-videos.s3.ap-southeast-2.amazonaws.com/CBA-imitative.MP4",
+    url: "http://cba.jakaixu.com/",
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ const caseData = [
     ⦾ Utilized Tailwind CSS and the classnames library for efficient styling and responsive design.
   `,
     src: "https://jakai-videos.s3.ap-southeast-2.amazonaws.com/woolworth-imitative.MP4",
+    url: "http://woolwoorth.s3-website-ap-southeast-2.amazonaws.com/",
   },
 ];
 const CaseCard = () => {
@@ -42,6 +45,9 @@ const CaseCard = () => {
             <Box sx={styles.box}>
               <Typography sx={styles.title}>{card.title}</Typography>
               <Typography sx={styles.content}>{card.content}</Typography>
+              <Link href={card.url} sx={{ paddingLeft: 2, marginBottom: 3 }}>
+                Click Here to visit.
+              </Link>
             </Box>
             <CardMedia
               component="video"
@@ -82,7 +88,13 @@ const styles = {
     fontSize: 22,
     paddingX: 2,
   },
-  content: { paddingX: 2, marginY: 2, color: Color.state.light_gray, whiteSpace: 'pre-line', lineHeight:1.5},
+  content: {
+    paddingX: 2,
+    marginY: 2,
+    color: Color.state.light_gray,
+    whiteSpace: "pre-line",
+    lineHeight: 1.5,
+  },
   cardMedia: {
     width: { md: "65%", sm: "100%", xs: "100%" },
   },
