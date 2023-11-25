@@ -30,7 +30,7 @@ export default function ResumeDownloadPage() {
           }
         </PDFDownloadLink>
       )}
-      {/* <ResumeFile /> */}
+      <ResumeFile />
     </Box>
   );
 }
