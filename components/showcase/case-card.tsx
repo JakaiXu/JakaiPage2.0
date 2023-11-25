@@ -26,9 +26,8 @@ const caseData = [
     id: 3,
     title: "Woolworth Imitative Page",
     content: `
-    ⦾ Established data communication using createContext and the useContext, useEffect, useState, and useCallback hook. 
-    ⦾ Implemented data storage through local storage with a custom hook, useLocalStorage. 
-    ⦾ Employed Modal and Portal techniques to seamlessly transition between visual pages when the shopping cart is active. 
+    ⦾ Established data communication using useContext, useEffect, useState hooks. 
+    ⦾ Implemented data storage through local storage. 
     ⦾ Utilized Tailwind CSS and the classnames library for efficient styling and responsive design.
   `,
     src: "https://jakai-videos.s3.ap-southeast-2.amazonaws.com/woolworth-imitative.MP4",
@@ -81,10 +80,9 @@ const styles = {
   title: {
     color: Color.action.default,
     fontSize: 22,
-    marginY: 3,
     paddingX: 2,
   },
-  content: { paddingX: 2, marginY: 2, color: Color.state.light_gray, whiteSpace: 'pre-line', lineHeight:2},
+  content: { paddingX: 2, marginY: 2, color: Color.state.light_gray, whiteSpace: 'pre-line', lineHeight:1.5},
   cardMedia: {
     width: { md: "65%", sm: "100%", xs: "100%" },
   },

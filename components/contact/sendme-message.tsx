@@ -17,7 +17,7 @@ const MessageSent = () => {
         Message sent. Thanks for contacting me, I will reply you within 48 hours
         on weekday.
       </Typography>
-      <Box sx={{ height: "15vh" }} />
+      <Box sx={{ height: "30vh" }} />
     </PageBackgroundPaper>
   );
 };
