@@ -6,7 +6,7 @@ pipeline {
     //     maven "maven-3.9"
     // }
     parameters { 
-        choice(name:"VERSION", choices:['1.1.0','1.2.0','1.3.0'],description:'')
+        choice(name: "VERSION", choices:['1.1.0','1.2.0','1.3.0'],description:'')
         booleanParam(name:'executeTests', defaultValue:true, description:'')
     }
     // environment { 
@@ -43,6 +43,13 @@ pipeline {
         }
         
         stage('deploy') {
+            input {
+                message "Seclect the environment to deploy to"
+                ok "Done"
+                parameters {
+                    choice(name: "ENV", choices:['dev','staging','prod'], description:'')
+                }
+            }
             steps {
                 // echo 'deploying the application...'
                 // echo "deploying with ${SERVER_CREDENTIALS}"
@@ -52,6 +59,7 @@ pipeline {
                 // echo "deploying version ${params.VERSION}"
                 script{
                     gv.deployApp()
+                    echo "Deploying to ${ENV}"
                 }
                 
             }
