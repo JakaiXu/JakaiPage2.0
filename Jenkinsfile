@@ -1,5 +1,5 @@
 CODE_CHANGES = getGitChanges()
-
+def gv
 pipeline {
     agent any
     tools {
@@ -14,10 +14,20 @@ pipeline {
         SERVER_CREDENTIALS = credentials("server-credentials")
     }
     stages {
+        state('init'){
+            steps{
+                script {
+                    gv = load "script.groovy"
+            }
+        }
+        }
         stage('build') {
             steps {
-                echo 'building the application...'
-                echo "building version ${NEW_VERSION}"
+                script{
+                   gv.buildApp() 
+                }
+                // echo 'building the application...'
+                // echo "building version ${NEW_VERSION}"
             }
         }
         
@@ -25,16 +35,24 @@ pipeline {
             when {
                 expression { params.executeTests}
             }
+            steps {
+                scripit {
+                    gv.testApp()
+                }
+            }
         }
         
         stage('deploy') {
             steps {
-                echo 'deploying the application...'
+                // echo 'deploying the application...'
                 // echo "deploying with ${SERVER_CREDENTIALS}"
                 // sh "${SERVER_CREDENTIALS}"
                 // withCredentials([usernamePassword(credentials:'server-credentials',usernameVariable:USER, passwordVariable:PWD)]){
                 //   sh 'some script ${USER} ${PWD}'  
-                echo "deploying version ${params.VERSION}"
+                // echo "deploying version ${params.VERSION}"
+                script{
+                    gv.deployApp()
+                }
                 }
             }
         }
