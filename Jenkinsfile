@@ -36,7 +36,7 @@ pipeline {
                 expression { params.executeTests}
             }
             steps {
-                scripit {
+                script {
                     gv.testApp()
                 }
             }
