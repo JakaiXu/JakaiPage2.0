@@ -1,4 +1,4 @@
-CODE_CHANGES = getGitChanges()
+// CODE_CHANGES = getGitChanges()
 def gv
 pipeline {
     agent any
