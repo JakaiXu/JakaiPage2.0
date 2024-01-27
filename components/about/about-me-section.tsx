@@ -27,14 +27,14 @@ const AboutMeSection = () => {
         </Grid>
         <Box sx={{ width: { md: "55%", sm: "100%", xs: "100%" } }}>
           <HeaderTitle>ABOUT ME</HeaderTitle>
-          <Title>A Full Stack Web Developer Based in Sydney Australia.</Title>
+          <Title>A Full Stack Web Developer Based in Australia.</Title>
           <Typography variant="h4">
-            As a junior fullstack web developer, I specialise in frontend
+            As a skilled fullstack web developer and DevOps engineer, I specialise in frontend
             development with one year of experience. I excel in creating
             responsive and visually appealing user interfaces, while also
-            possessing knowledge of backend technologies and server-side
+            possessing knowledge of backend technologies, devops skills and server-side
             programming. My focus is on delivering efficient and user-friendly
-            web applications with clean, maintainable code.
+            web applications with clean, maintainable code and cloud service.
           </Typography>
           <Box sx={{ display: "flex", justifyContent: "end", paddingTop: 5 }}>
             <CustomLink href="/download">

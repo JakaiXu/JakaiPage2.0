@@ -39,21 +39,21 @@ const EXPERIENCE = [
   {
     id: nanoid(),
     date: "2022-2023",
-    title: "Node JS Boot Camp",
-    organisation: "JR Academy",
+    title: "Full Stack Developer",
+    organisation: "OfferRipple",
     label: "study",
     description:
-      "Through a Udemy boot camp, I've learned JavaScript, HTML, and CSS for dynamic web development. Exploring React Native. I delved into server-side programming using Node.js and picked up database management. TypeScript added static typing to my toolkit, enhancing code reliability. This journey equips me to handle the full software development stack, from frontend design to backend implementation.",
+      "Specializing in the development of responsive web applications and contributing to multiple projects utilizing React, TypeScript, and MUI, adhering to responsive design principles. Proficient in building reusable RESTful APIs with Express and optimizing interactions with RTK Query and enhance data retrieval, caching, and state management. Skilled in database design using MongoDB and Docker-compose, collaborate on containerisation strategies, implementing multi-stage builds and non-root user configurations for improved efficiency and security.",
     icon: "",
   },
   {
     id: nanoid(),
     date: "2021-2022",
-    title: "Udemy Full Stack Boot Camp",
-    organisation: "Udemy",
+    title: "Front-End Developer",
+    organisation: "BeansMile CO.",
     label: "study",
     description:
-      "In my learning journey, I progressed from foundational knowledge to more advanced topics. TheJR Academy became my go-to resource for a comprehensive and systematic exploration of Node.js. This phase of my education involved diving deeper into the intricacies of Node.js, emphasizing hands-on applications and real-world scenarios. As I navigated the latter part of my studies, I embraced more advanced concepts, refining my skills and solidifying my proficiency in Node.js development.",
+      "As a front-end developer, I was responsible for designing and implementing the user interface style, focusing on elements such as color combinations, animations, and responsive design. Integration between the front-end and back-end was facilitated through Axios, with API testing conducted using Postman. Additionally, I refactored legacy applications to separate the backend API from the front-end for better performance.",
     icon: "",
   },
   {

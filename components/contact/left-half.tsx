@@ -45,7 +45,7 @@ const LeftHalf = () => {
           <List>
             <ListItem>
               <BoldLabel>Address:</BoldLabel>
-              <ContentText>37 Waitara Avenue Sydney 2077</ContentText>
+              <ContentText>Detail upon contact</ContentText>
             </ListItem>
             <ListItem>
               <BoldLabel>Email:</BoldLabel>
