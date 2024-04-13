@@ -1,4 +1,4 @@
-// CODE_CHANGES = getGitChanges()
+def gv 
 
 pipeline {
     agent any
@@ -11,6 +11,13 @@ pipeline {
     //     SERVER_CREDENTIALS = credentials('jenkins-jakai')
     // }
     stages {
+        stage("init"){
+            steps {
+                script {
+                    gv = load "script.groovy"
+                }
+            }
+        }
         stage("build") {
             // when {
             //     expression {
@@ -18,8 +25,10 @@ pipeline {
             //     }
             // }
             steps {
-                echo 'building application'
-                // echo "building version ${NEW_VERSION}"
+                script{
+                   gv.buildApp() 
+                }
+
             }
         }
         stage("test") {
@@ -29,7 +38,10 @@ pipeline {
                 }
             }
             steps {
-                echo 'testing application'
+                script{ 
+                    gv.testApp()
+                }
+               
                 // withCredentials([usernamePassword(credentialsId: 'jakai', usernameVariable: 'USER', passwordVariable: 'PWD')]) {
                 //     // Assuming you have some steps here that use USER and PWD variables
                 // }
@@ -37,8 +49,9 @@ pipeline {
         }
         stage("deploy") {
             steps {
-                echo 'deploying application'
-                echo "deploying version ${params.VERSION}"
+               script{
+                   gv.deployApp()
+               }
             }
         }
     }
