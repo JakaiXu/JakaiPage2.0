@@ -8,7 +8,7 @@ pipeline {
     }
     environment {
         NEW_VERSION = '1.3.0'
-        SERVER_CREDENTIALS = credentials('jakai')
+        SERVER_CREDENTIALS = credentials('jenkins-jakai')
     }
     stages {
         stage("build") {
