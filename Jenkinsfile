@@ -54,6 +54,7 @@ pipeline {
                 parameters{
                     choice(name: 'ENV', choices: ['dev', 'staging', 'prod'], description: '')
                 }
+            }
             steps {
                script{
                    gv.deployApp()
