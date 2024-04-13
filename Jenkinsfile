@@ -23,7 +23,7 @@ pipeline {
           steps {
               script {
                 echo "building the docker image"
-                withCredentials([usernamePassword(credentialsId:'jakai-jenkins',passwordVariable:'PWD', usernameVariable:'USER')]){
+                withCredentials([usernamePassword(credentialsId:'jenkins-jakai',passwordVariable:'PWD', usernameVariable:'USER')]){
                     sh 'docker build -t jakai/jenkins:jakaiweb-1.0.0 .'
                     sh "echo $PWD | docker login -u $USER --password-stdin"
                     sh 'docker push jakai/jenkins:jakaiweb-1.0.0' 
