@@ -30,9 +30,9 @@ pipeline {
             }
             steps {
                 echo 'testing application'
-                withCredentials([usernamePassword(credentialsId: 'jakai', usernameVariable: 'USER', passwordVariable: 'PWD')]) {
-                    // Assuming you have some steps here that use USER and PWD variables
-                }
+                // withCredentials([usernamePassword(credentialsId: 'jakai', usernameVariable: 'USER', passwordVariable: 'PWD')]) {
+                //     // Assuming you have some steps here that use USER and PWD variables
+                // }
             }
         }
         stage("deploy") {
