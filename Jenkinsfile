@@ -10,6 +10,7 @@ pipeline {
           steps {
               script {
                 echo "building the application"
+                sh 'mvn clean install'
                 sh 'mvn package'
                 // dir('subdirectory') {  
                 // sh 'mvn clean install'  
