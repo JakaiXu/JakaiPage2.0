@@ -6,6 +6,13 @@ pipeline {
     }
   
     stages {
+        stage('Test Docker') {
+            steps {
+                script {
+                    sh 'docker --version'  
+                }
+            }
+        }
         stage('build jar'){
           steps {
               script {
