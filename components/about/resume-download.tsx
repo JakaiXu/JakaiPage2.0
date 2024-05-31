@@ -8,11 +8,11 @@ const ResumeFile = () => {
           <Text style={styles.header}>Jakai Xu</Text>
           <Text style={styles.title}>Personal Summary</Text>
           <Text style={styles.paragraph}>
-            Passionate and self-motivated Front-end Developer looking for an
+            Passionate and self-motivated DevOps engineer looking for an
             opportunity to develop exciting web development projects. Proactive
             and self-problem solving are the work beliefs who believes
             results-oriented thinking method is an essential requirement for a
-            web developer. Excellent troubleshooting skills in a challenging and
+            web develop team. Excellent troubleshooting skills in a challenging and
             innovative environment.
           </Text>
           <Text style={styles.paragraph}>

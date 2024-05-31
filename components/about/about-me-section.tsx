@@ -27,14 +27,22 @@ const AboutMeSection = () => {
         </Grid>
         <Box sx={{ width: { md: "55%", sm: "100%", xs: "100%" } }}>
           <HeaderTitle>ABOUT ME</HeaderTitle>
-          <Title>A Full Stack Web Developer Based in Australia.</Title>
+          <Title>A DevOps Engineer Based in Australia.</Title>
           <Typography variant="h4">
-            As a skilled fullstack web developer and DevOps engineer, I specialise in frontend
-            development with one year of experience. I excel in creating
-            responsive and visually appealing user interfaces, while also
-            possessing knowledge of backend technologies, devops skills and server-side
-            programming. My focus is on delivering efficient and user-friendly
-            web applications with clean, maintainable code and cloud service.
+            As a skilled DevOps Engineer, I excel in managing robust CI/CD
+            pipelines, implementing branch protection policies, and configuring
+            cloud services on platforms like Azure and AWS. I am proficient in
+            Infrastructure as Code (IaC) using Terraform and Ansible playbook,
+            containerization with Docker, and orchestration with Kubernetes. I
+            ensure application reliability through comprehensive monitoring and
+            logging with Prometheus, Grafana, and the ELK stack, and maintain
+            high code quality using Git version control and branching
+            strategies. My focus on security and compliance, along with
+            automation of repetitive tasks, enhances operational efficiency.
+            Collaborating closely with development, operations, and QA teams, I
+            bridge the gap between development and operations to deliver
+            high-quality, reliable web applications that meet user needs and
+            business objectives.
           </Typography>
           <Box sx={{ display: "flex", justifyContent: "end", paddingTop: 5 }}>
             <CustomLink href="/download">

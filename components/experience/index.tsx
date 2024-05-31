@@ -29,7 +29,7 @@ const EXPERIENCE = [
   {
     id: nanoid(),
     date: "2023-current",
-    title: "Full Stack Developer",
+    title: "DevOps Engineer",
     organisation: "Cyberay",
     label: "work",
     description:
@@ -38,32 +38,32 @@ const EXPERIENCE = [
   },
   {
     id: nanoid(),
-    date: "2022-2023",
-    title: "Full Stack Developer",
+    date: "2021-2023",
+    title: "Full Stack Developer/DevOps Engineer",
     organisation: "OfferRipple",
-    label: "study",
+    label: "work",
     description:
-      "Specializing in the development of responsive web applications and contributing to multiple projects utilizing React, TypeScript, and MUI, adhering to responsive design principles. Proficient in building reusable RESTful APIs with Express and optimizing interactions with RTK Query and enhance data retrieval, caching, and state management. Skilled in database design using MongoDB and Docker-compose, collaborate on containerisation strategies, implementing multi-stage builds and non-root user configurations for improved efficiency and security.",
+      "Specializing in the development of responsive web applications and contributing to multiple projects utilizing React, TypeScript, and MUI, adhering to responsive design principles. Proficient in building reusable RESTful APIs with Express and optimizing interactions with RTK Query and enhance data retrieval, caching, and state management. Skilled in database design using MongoDB and Docker-compose, collaborate on containerisation strategies, Updated the Task Definition in CI/CD workflow using the unique image tag and redeployed the ECS service,Implementing multi-stage builds and non-root user configurations for improved efficiency and security.",
     icon: "",
   },
-  {
-    id: nanoid(),
-    date: "2021-2022",
-    title: "Front-End Developer",
-    organisation: "BeansMile CO.",
-    label: "study",
-    description:
-      "As a front-end developer, I was responsible for designing and implementing the user interface style, focusing on elements such as color combinations, animations, and responsive design. Integration between the front-end and back-end was facilitated through Axios, with API testing conducted using Postman. Additionally, I refactored legacy applications to separate the backend API from the front-end for better performance.",
-    icon: "",
-  },
-  {
-    id: nanoid(),
-    date: "2019-2020",
-    title: "Master of Applied Management",
-    organisation: "South Institute of Technology",
-    label: "study",
-    description:
-      "A Master of Applied Management (MAM) is a graduate program focusing on the practical application of management skills. Covering finance, marketing, and strategy, MAM emphasizes hands-on experience. With flexibility for working professionals, the program fosters problem-solving and strategic thinking, offering a well-rounded and industry-relevant education.",
-    icon: "",
-  },
+  // {
+  //   id: nanoid(),
+  //   date: "2021-2022",
+  //   title: "Front-End Developer",
+  //   organisation: "BeansMile CO.",
+  //   label: "study",
+  //   description:
+  //     "As a front-end developer, I was responsible for designing and implementing the user interface style, focusing on elements such as color combinations, animations, and responsive design. Integration between the front-end and back-end was facilitated through Axios, with API testing conducted using Postman. Additionally, I refactored legacy applications to separate the backend API from the front-end for better performance.",
+  //   icon: "",
+  // },
+  // {
+  //   id: nanoid(),
+  //   date: "2019-2020",
+  //   title: "Master of Applied Management",
+  //   organisation: "South Institute of Technology",
+  //   label: "study",
+  //   description:
+  //     "A Master of Applied Management (MAM) is a graduate program focusing on the practical application of management skills. Covering finance, marketing, and strategy, MAM emphasizes hands-on experience. With flexibility for working professionals, the program fosters problem-solving and strategic thinking, offering a well-rounded and industry-relevant education.",
+  //   icon: "",
+  // },
 ];
