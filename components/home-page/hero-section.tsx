@@ -15,7 +15,7 @@ const HeroSection = () => {
   return (
     <Box sx={heroSectionStyles.positionContainer}>
       <StyledBox>
-        <DefaultTitle>Full Stack Web Developer</DefaultTitle>
+        <DefaultTitle>DevOps Cloud Engineer</DefaultTitle>
         <Typography sx={heroSectionStyles.titleSize}>
           I&apos;m Jakai Everett Xu
         </Typography>
